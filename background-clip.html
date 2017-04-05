@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>background clip</title>
+	<style>
+		 .demo {
+		    width: 200px;
+		    height: 200px;
+		    background: url(bg.jpg) no-repeat;
+		    -webkit-text-fill-color: transparent;
+		    -webkit-background-clip: text;
+		    font-size:50px;
+		    line-height:200px;
+		    text-align:center;
+		    font-weight:700;
+		}
+		.demo:before {
+		    content: '';
+		    display: block;
+		    position: absolute;
+		    z-index: -2;
+		    top: 0;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+		    background: url(bg.jpg) no-repeat;
+		    opacity: 0;
+		    transition: .7s;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="demo">
+      Text
+    </div>
+</body>
+</html>

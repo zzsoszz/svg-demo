@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css clip path</title>
+	<style>
+		image{
+		    clip-path: url(#clipping);
+		}
+	</style>
+</head>
+<body>
+	<svg class="svg-defs" style="position: absolute;width: 0;height: 0;">
+	    <defs>
+	      <clipPath id="clipping" >
+	        <polygon id="Star-1" points="50 0 100 100 0 100"></polygon>
+	        <text x="0" y="3.2em">Text</text>
+	      </clipPath>
+	    </defs>
+	</svg>
+
+	<svg width="200" height="300">
+        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bg.jpg" width="200" height="300"></image>
+    </svg>
+
+</body>
+</html>

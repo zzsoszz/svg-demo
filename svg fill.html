@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>background clip</title>
+	<style>
+		 text {
+			    fill: url(#pattern);
+			    font: bold italic 7em/1.5 Georgia;
+		  }
+	</style>
+</head>
+<body>
+	<svg class="svg-defs" style="position: absolute;width: 0;height: 0;">
+	  <defs>
+	        <pattern id="pattern" patternUnits="userSpaceOnUse" width="200" height="300" viewBox="0 0 200 300">
+	          <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bg.jpg" width="200" height="300"></image>
+	        </pattern>
+	   </defs>
+	</svg>
+	<svg width="200" height="200">
+        <text x="0" y="1em">Text</text>
+    </svg>
+</body>
+</html>

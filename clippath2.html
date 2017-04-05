@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>svg clip path 2</title>
+</head>
+<body>
+	
+	<svg width="400px" height="400px" viewBox="0 0 1 1">
+	  <defs>
+	    <clipPath id="myclip" clipPathUnits="objectBoundingBox">
+	      <use xlink:href="#poly"/>
+	    </clipPath>
+	  </defs>
+	  <polygon id="poly" points="0.1 0.1 0.9 0.5 0.1 0.9"
+	           fill="none" stroke="red" stroke-width="0.02"/>
+	  <image xlink:href="http://placekitten.com/200/200" width="1" height="1"
+	         clip-path="url(#myclip)"/>
+	</svg>
+	
+</body>
+</html>
