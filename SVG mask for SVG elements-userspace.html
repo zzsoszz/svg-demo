@@ -9,7 +9,7 @@
 		}
 	</style>
 </head>
-<body>
+<body style="background:#282828">
 	<svg class="svg-defs" style="position: absolute;width: 0;height: 0;">
 	  <defs>
 	  		 <linearGradient id="gradient" x1="0" y1="0" x2="110%" y2="0%">
@@ -25,20 +25,10 @@
 	          <stop stop-color="#000" offset="90%"></stop><stop stop-color="#000" offset="100%"></stop>
 	        </linearGradient>
 	    	
-	        <mask id="masking" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
-	          <rect y="0" width="1" height="1" fill="url(#gradient)"></rect>
-	          <circle cx=".5" cy=".5" r=".42" fill="black"></circle>
-	          
-	          <circle cx="0" cy=".5" r=".32" fill="black"></circle>
-	          <circle cx="1" cy=".5" r=".32" fill="black"></circle>
-	          
-	          <circle cx="0" cy=".5" r=".3" fill="gray"></circle>
-	          <circle cx=".5" cy=".5" r=".4" fill="gray"></circle>
-	          <circle cx="1" cy=".5" r=".3" fill="gray"></circle>
-	          
-	          <circle cx="0" cy=".5" r=".25" fill="white"></circle>
-	          <circle cx=".5" cy=".5" r=".35" fill="white"></circle>
-	          <circle cx="1" cy=".5" r=".25" fill="white"></circle>
+	        <mask id="masking" maskUnits="objectBoundingBox" maskContentUnits="userSpaceOnUse">
+	          <rect y="0" width="200" height="300" fill="url(#gradient)"></rect>
+	          <circle cx="50" cy="50" r="20" fill="black"></circle>
+	          <circle cx="0" cy="50" r="32" fill="black"></circle>
 	        </mask>
 	   </defs>
 	</svg>
